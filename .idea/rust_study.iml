@@ -21,6 +21,7 @@
       <sourceFolder url="file://$MODULE_DIR$/seven_point_three/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/seven_point_two/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/eight_point_one/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/eight_point_two/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/three_point_one/target" />
       <excludeFolder url="file://$MODULE_DIR$/three_point_two/target" />
       <excludeFolder url="file://$MODULE_DIR$/variables/target" />
@@ -40,6 +41,7 @@
       <excludeFolder url="file://$MODULE_DIR$/seven_point_three/target" />
       <excludeFolder url="file://$MODULE_DIR$/seven_point_two/target" />
       <excludeFolder url="file://$MODULE_DIR$/eight_point_one/target" />
+      <excludeFolder url="file://$MODULE_DIR$/eight_point_two/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
