@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/branches/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/conversion/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fibonacci/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/functions/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/guessing_game/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/loops/src" isTestSource="false" />
@@ -12,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/branches/target" />
       <excludeFolder url="file://$MODULE_DIR$/conversion/target" />
+      <excludeFolder url="file://$MODULE_DIR$/fibonacci/target" />
       <excludeFolder url="file://$MODULE_DIR$/functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/guessing_game/target" />
       <excludeFolder url="file://$MODULE_DIR$/loops/target" />
