@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/functions/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/guessing_game/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/loops/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ownership/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/variables/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/branches/target" />
@@ -17,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/guessing_game/target" />
       <excludeFolder url="file://$MODULE_DIR$/loops/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/variables/target" />
     </content>
     <orderEntry type="inheritedJdk" />
