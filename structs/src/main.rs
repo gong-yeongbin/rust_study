@@ -12,6 +12,27 @@ struct Rectangle {
     height: u32,
 }
 
+impl Rectangle {
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
+
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+
+    fn width(&self) -> bool {
+        self.width > 0
+    }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+}
+
 fn main() {
     // [5.1] 구조체 정의 및 인스턴스화
     /* 일부 필드만 가변으로 만들 수 없음 */
@@ -72,6 +93,38 @@ fn main() {
     };
 
     dbg!(&rect1);
+
+    // [5.3] 메서드 문법
+    // [5.3.1] 메서드 정의하기
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    println!("The area of the rectangle is {} square pixels.", rect1.area());
+
+    if rect1.width() {
+        println!("The rectangle has a nonzero width; it is {}", rect1.width);
+    }
+
+    // [5.3.2] 더 많은 매개변수를 가진 메서드
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+    let rect3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
+
+    println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
+    println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+
+    // [5.3.3] 연관 함수
+    let sq = Rectangle::square(3);
 }
 
 // [5.1.1] 필드 초기화 축약법 사용하기
