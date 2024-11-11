@@ -154,6 +154,12 @@ fn main() {
     println!("the first word is: {}", word);
 
     let s = "Hello, world!";
+
+    // [4.3.2] 그 외 슬라이스
+    let a = [1, 2, 3, 4, 5];
+
+    let slice = &a[1..3];
+    assert_eq!(slice, &[2, 3]);
 }
 
 fn takes_ownership(some_string: String) {
