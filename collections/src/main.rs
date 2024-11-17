@@ -64,4 +64,58 @@ fn main() {
     {
         let v = vec![1, 2, 3, 4];
     } // v가 스코프 밖으러 벗어나고 해제 됨!
+
+    // [8.2.2] 새로운 문자열 생성하기
+    let mut s = String::new();
+
+    let data = "inital contents";
+
+    let s = data.to_string();
+    let s = "inital contents".to_string();
+    let s = String::from("inital contents");
+
+    // [8.2.3] 문자열 업데이트하기
+    // push_str과 push를 이용하여 문자열 추가하기
+    let mut a = String::from("foo");
+    a.push_str("bar");
+
+    let mut s1 = String::from("foo");
+    let s2 = "bar";
+    s1.push_str(s2);
+    println!("s2 is {s2}");
+
+    let mut s = String::from("lo");
+    s.push('l');
+
+    // + 연산자나 format! 매크로를 이용한 접합
+    let s1 = String::from("Hello, ");
+    let s2 = String::from("world!");
+    let s3 = s1 + &s2; // s1은 여기로 이동되어 더 이상 사용할 수 없음.!
+
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+
+    // let s = s1 + "-" + &s2 + "-" + &s3;
+    let s = format!("{s1}-{s2}-{s3}");
+
+    // [8.2.4] 문자열 내부의 인덱싱
+    let s1 = String::from("hello");
+    // let h = s1[0]; 에러!
+
+    /* String은 Vec<u8>을 감싼 것 */
+    let hello = String::from("Hola"); // len : 4, 문자열 'Hola'를 저장하고 있는 Vec이 4바이트 길이, UTF-8으로 인코딩되면 각각의 글자들이 1바이트씩 차지한다는 것.
+    let hello = String::from("Здравствуйте"); // len : 12 x, 각각의 유니코드 스칼라값이 2바이트씩 차지. len : 24
+
+    // [8.2.5] 문자열 슬라이싱하기
+    let hello = "Здравствуйте";
+    let s = &hello[0..4]; // 글자들이 각각 2바이트를 차지한다고 언급했으므로 Зд, 0..1 패닉!
+
+    // [8.2.6] 문자열에 대한 반복을 위한 메서드
+    for c in "Зд".chars() {
+        println!("{c}");
+    }
+    for b in "Зд".bytes() {
+        println!("{b}");
+    }
 }
