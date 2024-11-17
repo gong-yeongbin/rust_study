@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/enumeration/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/module_system/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/backyard/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/restaurant/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/branches/target" />
       <excludeFolder url="file://$MODULE_DIR$/conversion/target" />
@@ -28,6 +29,7 @@
       <excludeFolder url="file://$MODULE_DIR$/enumeration/target" />
       <excludeFolder url="file://$MODULE_DIR$/module_system/target" />
       <excludeFolder url="file://$MODULE_DIR$/backyard/target" />
+      <excludeFolder url="file://$MODULE_DIR$/restaurant/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
