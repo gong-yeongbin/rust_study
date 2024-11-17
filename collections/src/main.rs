@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn main() {
     /* [8.1]벡터에 여러 값의 목록 저장하기
        메모리에서 모든 값을 서로 이웃하도록 배치
@@ -117,5 +119,49 @@ fn main() {
     }
     for b in "Зд".bytes() {
         println!("{b}");
+    }
+
+    // [8.3.1] 새로운 해시 맵 생성하기
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+
+    // [8.3.2] 해시 맵의 값 접근하기
+    let team_name = String::from("Blue");
+    let score = scores.get(&team_name).copied().unwrap_or(0);
+
+    for (key, value) in &scores {
+        println!("{key}: {value}");
+    }
+
+    // [8.3.3] 해시 맵과 소유권
+    /* i32처럼 Copy 트레이트를 구현한 타입의 값은 해시 맵 안으로 복사 됨,
+       String처럼 소유권이 있는 값의 경우 값들이 이동되서 해시 맵이 그 값으 소유자가 됨 */
+    let field_name = String::from("Favorite color");
+    let field_value = String::from("Blue");
+
+    let mut map = HashMap::new();
+    map.insert(field_name, field_value);
+    /* field_name, field_value는 이 시점부터 유효하지 않음*/
+
+    // [8.3.4] 해시 맵 업데이트하기
+    // 값을 덮어쓰기
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Blue"), 25);
+
+    // 키가 없을 때만 키와 값 추가하기
+    scores.entry(String::from("Yellow")).or_insert(50);
+    scores.entry(String::from("Blue")).or_insert(50);
+
+    // 예전 값에 기초하여 값을 업데이트하기
+    let text = "hello world wonderful world";
+
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
     }
 }
