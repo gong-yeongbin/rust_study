@@ -3,6 +3,26 @@ use std::error::Error as stdError;
 use std::{fs, io};
 use std::io::{Error, ErrorKind, Read};
 
+
+// [9.3.4] 유효성을 위한 커스텀 타입 생성하기
+pub struct Guess {
+    value: i32,
+}
+
+impl Guess {
+    pub fn new(value: i32) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {}.", value);
+        }
+        Guess { value }
+    }
+
+    pub fn value(&self) -> i32 {
+        self.value
+    }
+}
+
+
 fn main() -> Result<(), Box<dyn stdError>> {
     // panic!("crash and burn");
 
@@ -48,7 +68,9 @@ fn main() -> Result<(), Box<dyn stdError>> {
     // let greeting_file = File::open("hello.txt").expect("hello.txt should be included in this project");
 
     // ? 연산자가 사용될 수 있는 곳
-    let greeting_file = File::open("hello.txt")?;
+    // let greeting_file = File::open("hello.txt")?;
+    // Ok(())
+
     Ok(())
 }
 
