@@ -17,6 +17,8 @@
       <sourceFolder url="file://$MODULE_DIR$/backyard/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/restaurant/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/collections/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exception/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/panic/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/branches/target" />
       <excludeFolder url="file://$MODULE_DIR$/conversion/target" />
@@ -32,6 +34,8 @@
       <excludeFolder url="file://$MODULE_DIR$/backyard/target" />
       <excludeFolder url="file://$MODULE_DIR$/restaurant/target" />
       <excludeFolder url="file://$MODULE_DIR$/collections/target" />
+      <excludeFolder url="file://$MODULE_DIR$/exception/target" />
+      <excludeFolder url="file://$MODULE_DIR$/panic/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
