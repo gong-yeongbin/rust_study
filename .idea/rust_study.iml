@@ -19,6 +19,9 @@
       <sourceFolder url="file://$MODULE_DIR$/collections/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exception/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/panic/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/company_department/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/median_mode/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pig_latin/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/branches/target" />
       <excludeFolder url="file://$MODULE_DIR$/conversion/target" />
@@ -36,6 +39,9 @@
       <excludeFolder url="file://$MODULE_DIR$/collections/target" />
       <excludeFolder url="file://$MODULE_DIR$/exception/target" />
       <excludeFolder url="file://$MODULE_DIR$/panic/target" />
+      <excludeFolder url="file://$MODULE_DIR$/company_department/target" />
+      <excludeFolder url="file://$MODULE_DIR$/median_mode/target" />
+      <excludeFolder url="file://$MODULE_DIR$/pig_latin/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
