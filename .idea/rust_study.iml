@@ -24,6 +24,7 @@
       <sourceFolder url="file://$MODULE_DIR$/pig_latin/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/generic/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/traits/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lifetime/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/branches/target" />
       <excludeFolder url="file://$MODULE_DIR$/conversion/target" />
@@ -46,6 +47,7 @@
       <excludeFolder url="file://$MODULE_DIR$/pig_latin/target" />
       <excludeFolder url="file://$MODULE_DIR$/generic/target" />
       <excludeFolder url="file://$MODULE_DIR$/traits/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lifetime/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
