@@ -1,5 +1,18 @@
-struct InportantExcerpt<'a> {
+use std::fmt::Display;
+
+struct ImportantExcerpt<'a> {
     part: &'a str,
+}
+
+impl<'a> ImportantExcerpt<'a> {
+    fn level(&self) -> i32 {
+        3
+    }
+
+    fn announce_and_return_part(&self, announcement: &str) -> &str {
+        println!("Attention please: {}", announcement);
+        self.part
+    }
 }
 
 fn main() {
@@ -28,9 +41,12 @@ fn main() {
     // [10.4.7] 구조체 정의에서 라이프타임 명시하기
     let novel = String::from("Call me Ishmael. Some years ago...");
     let first_sentence = novel.split('.').next().expect("Could not find a '.'");
-    let i = InportantExcerpt {
+    let i = ImportantExcerpt {
         part: first_sentence
     };
+
+    // [10.4.10] 정적 라이프타임 'static 해당 참조자가 프로그램 전체 생애주기 동안 살아 있음
+    let s: &'static str = "I have a static lifetime.";
 }
 
 // fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -43,4 +59,20 @@ fn main() {
 
 fn longest<'a>(x: &'a str, y: &str) -> &'a str {
     x
+}
+
+// [10.5] 제네릭 타입 매개변수, 트레이트 바운드, 라이프타임을 한 곳에 사용해보기
+fn logest_with_an_announcement<'a, T>(
+    x: &'a str,
+    y: &'a str,
+    ann: T,
+) -> &'a str where
+    T: Display,
+{
+    println!("Announcement! {}", ann);
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
 }
