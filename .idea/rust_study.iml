@@ -5,9 +5,15 @@
       <sourceFolder url="file://$MODULE_DIR$/hello_cargo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/guessing_game/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter_03/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/functions/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/variables/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/hello_cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/guessing_game/target" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter_03/target" />
+      <excludeFolder url="file://$MODULE_DIR$/functions/target" />
+      <excludeFolder url="file://$MODULE_DIR$/variables/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
