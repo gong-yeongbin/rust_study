@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/structs/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/enums/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/backyard/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/collections/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/hello_cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/guessing_game/target" />
@@ -28,6 +29,7 @@
       <excludeFolder url="file://$MODULE_DIR$/structs/target" />
       <excludeFolder url="file://$MODULE_DIR$/enums/target" />
       <excludeFolder url="file://$MODULE_DIR$/backyard/target" />
+      <excludeFolder url="file://$MODULE_DIR$/collections/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
