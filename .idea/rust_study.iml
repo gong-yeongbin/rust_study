@@ -17,7 +17,9 @@
       <sourceFolder url="file://$MODULE_DIR$/backyard/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/collections/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/panics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/aggregator/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/generics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/traits/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/hello_cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/guessing_game/target" />
@@ -33,7 +35,9 @@
       <excludeFolder url="file://$MODULE_DIR$/backyard/target" />
       <excludeFolder url="file://$MODULE_DIR$/collections/target" />
       <excludeFolder url="file://$MODULE_DIR$/panics/target" />
+      <excludeFolder url="file://$MODULE_DIR$/aggregator/target" />
       <excludeFolder url="file://$MODULE_DIR$/generics/target" />
+      <excludeFolder url="file://$MODULE_DIR$/traits/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
