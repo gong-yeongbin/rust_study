@@ -28,6 +28,7 @@
       <sourceFolder url="file://$MODULE_DIR$/iterators/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/art/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/my_crate/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/boxs/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/hello_cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/guessing_game/target" />
@@ -53,6 +54,7 @@
       <excludeFolder url="file://$MODULE_DIR$/iterators/target" />
       <excludeFolder url="file://$MODULE_DIR$/art/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_crate/target" />
+      <excludeFolder url="file://$MODULE_DIR$/boxs/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
