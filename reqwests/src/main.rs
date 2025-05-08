@@ -1,7 +1,8 @@
 use std::time::Duration;
 
-// #[tokio::main]
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+// fn main() -> Result<(), Box<dyn std::error::Error>> {
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // let url = "https://wikidocs.net/book/16747";
     // let res = reqwest::get("https://wikidocs.net/book/16747")
     //     .await
@@ -65,13 +66,47 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // let body = reqwest::blocking::get("https://www.rust-lang.org")?.text()?;
     // println!("body = {body:?}");
 
-    let client = reqwest::blocking::Client::builder()
-        .timeout(Duration::from_secs(10))
-        .build()?;
-    let resp = client.get("http://httpbin.org/").send()?;
-    let body = resp.text()?;
-    println!("body={body:?}");
+    // let client = reqwest::blocking::Client::builder()
+    //     .timeout(Duration::from_secs(10))
+    //     .build()?;
+    // let resp = client.get("http://httpbin.org/").send()?;
+    // let body = resp.text()?;
+    // println!("body={body:?}");
+    //
 
+    let client = reqwest::Client::new();
+    let res = client
+        .post("http://httpbin.org/post")
+        .body("the exact body that is sent")
+        .send()
+        .await?
+        .text()
+        .await?;
+
+    let params = [("foo", "bar"), ("baz", "quux")];
+    let client = reqwest::Client::new();
+    let res = client
+        .post("http://httpbin.org/post")
+        .form(&params)
+        .send()
+        .await?
+        .text()
+        .await?;
+
+    let mut map = std::collections::HashMap::new();
+    map.insert("lang", "rust");
+    map.insert("body", "json");
+
+    let client = reqwest::Client::new();
+    let res = client
+        .post("http://httpbin.org/post")
+        .json(&map)
+        .send()
+        .await?
+        .text()
+        .await?;
+
+    println!("res={}", res);
     Ok(())
 }
 
